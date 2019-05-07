@@ -28,4 +28,8 @@ public class Main {
 
         return deck;
     }
+
+    public void printDeck(){
+        System.out.println("print");
+    }
 }
