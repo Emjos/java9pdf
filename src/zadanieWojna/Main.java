@@ -6,10 +6,13 @@ import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
-        createDeck(23,52);
-
        List<Card> deck1 = new ArrayList<>(createDeck(5,10));
        List<Card> deck2 = new ArrayList<>(createDeck(5,10));
+
+
+
+
+
         System.out.println(deck1);
         System.out.println(deck2);
 
@@ -27,9 +30,7 @@ public class Main {
         }
 
         return deck;
+
     }
 
-    public void printDeck(){
-        System.out.println("print");
-    }
 }
