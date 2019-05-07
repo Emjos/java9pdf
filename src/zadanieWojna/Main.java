@@ -20,7 +20,7 @@ public class Main {
 
     public static List<Card> createDeck(int rareSeed,int deckSize){
         List<Card> deck = new ArrayList<>();
-        Random random = new Random();
+        Random random = new Random(rareSeed);
 
         for (int i = 0; i < deckSize ; i++) {
         int cValue = random.nextInt(10)+1;
@@ -30,5 +30,7 @@ public class Main {
         }
 
         return deck;
+
     }
+
 }
